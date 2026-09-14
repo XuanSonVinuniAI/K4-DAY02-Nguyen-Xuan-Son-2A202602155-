@@ -1,9 +1,9 @@
 # Phiếu quy tắc gán nhãn — Ngày 2
 
-**Họ và tên:** CHƯA ĐIỀN<br>
-**MSSV:** CHƯA ĐIỀN<br>
-**Hình thức:** CHƯA ĐIỀN — cá nhân hoặc theo cặp<br>
-**Mã cặp:** CHƯA ĐIỀN — ghi `SOLO` nếu làm cá nhân
+**Họ và tên:** NGUYỄN XUÂN SƠN<br>
+**MSSV:** 2A202602155<br>
+**Hình thức:** cá nhân<br>
+**Mã cặp:** SOLO
 
 ## 1. Phạm vi
 
@@ -46,37 +46,37 @@ Hoàn thành trước khi xem bài của người khác hoặc bộ nhãn tham c
 
 ### Tình huống A — xe buýt hay xe van?
 
-- Ảnh và mã vật thể: CHƯA ĐIỀN
-- Dấu hiệu nhìn thấy: CHƯA ĐIỀN
-- Quy tắc áp dụng: CHƯA ĐIỀN
-- Quyết định: CHƯA ĐIỀN
-- Nếu vẫn thiếu bằng chứng, bạn sẽ làm gì? CHƯA ĐIỀN
+- Ảnh và mã vật thể: drive_008 – BUS 3 (MANUAL)
+- Dấu hiệu nhìn thấy: Vật thể có thân xe lớn, dài và cao, nhiều cửa sổ và hình dáng đặc trưng của xe buýt.
+- Quy tắc áp dụng: Phân lớp dựa trên đặc điểm trực quan của phương tiện trong ảnh, không suy đoán những phần không quan sát được.
+- Quyết định: bus
+- Nếu vẫn thiếu bằng chứng, bạn sẽ làm gì? Đặt review_state = needs_review, ghi rõ phần bằng chứng chưa đủ và xin Lab Coach hỗ trợ.
 
 ### Tình huống B — xe tải hay xe van/ô tô con?
 
-- Ảnh và mã vật thể: CHƯA ĐIỀN
-- Dấu hiệu nhìn thấy: CHƯA ĐIỀN
-- Quy tắc áp dụng: CHƯA ĐIỀN
-- Quyết định: CHƯA ĐIỀN
-- Nếu vẫn thiếu bằng chứng, bạn sẽ làm gì? CHƯA ĐIỀN
+- Ảnh và mã vật thể: drive_008 – TRUCK 25 (MANUAL)
+- Dấu hiệu nhìn thấy: Xe có cabin phía trước và thùng chở hàng lớn (đất, cát,...) phía sau, hình dáng rõ ràng của xe tải.
+- Quy tắc áp dụng: Chọn truck khi có đặc điểm trực quan rõ ràng của cabin và thùng chở hàng; không dựa vào kích thước đơn thuần.
+- Quyết định: truck
+- Nếu vẫn thiếu bằng chứng, bạn sẽ làm gì? Đặt review_state = needs_review, ghi lại lý do và xin Lab Coach xác nhận thay vì tự đoán.
 
 ### Tình huống C — bị che, bị mép ảnh cắt hay không đủ bằng chứng?
 
-- Ảnh và mã vật thể: CHƯA ĐIỀN
-- Dấu hiệu nhìn thấy khi phóng 100%: CHƯA ĐIỀN
-- Giá trị `visibility`: CHƯA ĐIỀN
-- Giá trị `boundary`: CHƯA ĐIỀN
-- Trạng thái `review_state`: CHƯA ĐIỀN
-- Lý do: CHƯA ĐIỀN
+- Ảnh và mã vật thể: drive_038 – CAR 73 (MANUAL)
+- Dấu hiệu nhìn thấy khi phóng 100%: Chỉ nhìn thấy một phần nhỏ đầu của xe ở sát mép ảnh; phần lớn xe nằm ngoài khung hình nên không quan sát được đầy đủ.
+- Giá trị `visibility`: unclear
+- Giá trị `boundary`: truncated
+- Trạng thái `review_state`: needs_review
+- Lý do: Xe bị mép ảnh cắt nhiều và chỉ có một phần nhỏ được quan sát. Vì vậy bằng chứng về toàn bộ vật thể chưa đủ rõ để hoàn toàn tự tin, cần đánh dấu để xem lại.
 
 ## 6. Xác nhận tự kiểm tra
 
-- [ ] Đã rà đủ bốn ảnh.
-- [ ] Đã kiểm vật thể thiếu và trùng.
-- [ ] Đã kiểm lớp và hình học từng hộp.
-- [ ] Mỗi hộp có đủ ba thuộc tính.
-- [ ] Đã xử lý mọi hộp `needs_review`.
-- [ ] Đã hoàn thành ba tình huống trước khi xem nguồn đối chiếu.
+- [x] Đã rà đủ bốn ảnh.
+- [x] Đã kiểm vật thể thiếu và trùng.
+- [x] Đã kiểm lớp và hình học từng hộp.
+- [x] Mỗi hộp có đủ ba thuộc tính.
+- [x] Đã xử lý mọi hộp `needs_review`.
+- [x] Đã hoàn thành ba tình huống trước khi xem nguồn đối chiếu.
 - [ ] Nếu làm theo cặp, hai người đã xuất bài độc lập trước khi trao đổi.
-- [ ] Nếu làm cá nhân, bài riêng đã được kiểm trước khi nhận bộ tham chiếu.
-- [ ] Số vật thể thực tế: CHƯA ĐIỀN — 40–60 là mục tiêu khối lượng, không phải điểm cắt.
+- [x] Nếu làm cá nhân, bài riêng đã được kiểm trước khi nhận bộ tham chiếu.
+- [x] Số vật thể thực tế: 86 — 40–60 là mục tiêu khối lượng, không phải điểm cắt.
